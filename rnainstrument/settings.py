@@ -20,12 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mtjm*x*d#vfoe8hfhrb)71a@(*26v7@(_9-v1zpe^6metlw69g'
+SECRET_KEY = 'admirablehjdfkjsdlhlvnnkasdjvn3459nvwev984sdjhdhfkghgdfklghdjkfghlk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.rnainstrument.ir'
+]
 
 
 # Application definition
@@ -123,3 +125,9 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+SECURE_HSTS_SECONDS=1000000000
+SECURE_HSTS_INCLUDE_SUBDOMAINS=True
+SECURE_SSL_REDIRECT=True
+CSRF_COOKIE_SECURE=True
+SECURE_HSTS_PRELOAD=True
+SESSION_COOKIE_SECURE=True
